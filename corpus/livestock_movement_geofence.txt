@@ -1,0 +1,18 @@
+LIVESTOCK MOVEMENT, GEOFENCING, AND NECK-COLLAR MONITORING PATTERNS
+
+IoT neck-collar devices (GPS + accelerometer) enable monitoring of livestock location, movement speed, and geofence boundary status in real time, adding a movement-based signal layer distinct from camera-based boundary detection.
+
+Normal grazing movement: cattle and goats under normal grazing conditions typically move at low speeds, generally under 1-2 km/h during active grazing, with intermittent stationary periods for rumination (cattle spend a significant portion of the day resting and chewing cud). Movement is generally gradual and undirected, following forage availability rather than moving in a sustained direction.
+
+Elevated movement risk indicators:
+- Sudden sustained increase in movement speed (well above normal grazing pace, sustained for several minutes rather than a brief startle) can indicate the animal is being driven, chased, or has bolted in panic - relevant both to potential theft and to conflict/predation situations.
+- Sustained directional movement (moving consistently in one direction rather than the undirected wandering pattern typical of grazing) is a secondary indicator worth combining with speed data, since a healthy animal moving quickly in a straight line for an extended period is behaviorally different from normal grazing.
+- A sudden stop in movement combined with no recovery over an extended period can indicate injury, illness, or the animal being cornered/restrained.
+
+Geofence boundary events: a geofence is a virtual boundary defined by GPS coordinates around a farm's grazing area or safe zone. Two distinct event types matter for risk classification, and should be treated differently:
+- Geofence EXIT (the animal itself leaves the defined safe/grazing zone): this is a herd-management and theft-risk signal - the animal may have strayed, been let out, or been moved by a third party.
+- Geofence ENTRY by an external actor detected near the boundary (via camera/motion detection, separate from the collar) while the herd's own collars show no exit: this is closer to the intrusion/conflict signal pattern already described in the conflict_patterns.txt document - an external party approaching, not the herd leaving.
+
+Combining signals: the strongest risk assessment comes from combining collar data (location, speed, geofence status) with camera detection and, where relevant, conflict-pattern context (state, season) from the rest of this corpus. For example, a geofence exit combined with sustained high-speed directional movement during a documented high-risk season (see state_risk_gps.txt) represents a materially higher combined risk than either signal alone.
+
+Recommended alert routing for movement-based signals: geofence exit with normal movement speed - notify farm owner only (likely routine stray, lower urgency). Geofence exit combined with elevated sustained speed - notify farm owner and forest guard unit (possible theft or panic-driven incident, higher urgency). Sudden stop with no recovery - notify farm owner (possible injury/illness, veterinary-type urgency rather than security urgency).

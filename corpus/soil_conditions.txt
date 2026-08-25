@@ -1,0 +1,14 @@
+SOIL MOISTURE AND CONDITION MONITORING FOR CROP PROTECTION
+
+IoT soil sensors (capacitive moisture probes, combined with basic soil temperature sensing) allow monitoring of field conditions relevant to crop stress risk, complementing the livestock and conflict monitoring already covered in this corpus.
+
+Soil moisture thresholds (general guidance applicable across most staple crops grown in Nigeria's agrarian belt - maize, cassava, yam, vegetables): soil moisture is typically expressed as a percentage of field capacity or volumetric water content (VWC).
+- Below 20% VWC (or notably dry to the touch at root depth): drought stress risk. Crops in early growth stages are especially vulnerable; sustained dry conditions during the vulnerable planting-to-establishment window (see conflict_patterns.txt seasonal section, April-June) can significantly affect yield.
+- 20-60% VWC: generally adequate range for most staple crops, varying by soil type (sandy soils drain faster and need more frequent monitoring than clay-heavy soils).
+- Above 60-70% VWC sustained: waterlogging risk, particularly relevant during heavy rainy season periods; root oxygen deprivation and increased fungal disease risk become concerns.
+
+Soil temperature: most tropical staple crops germinate and grow well in soil temperatures between 20-30°C. Extreme soil surface temperatures above 35-40°C (common in exposed, unshaded soil during peak dry-season sun) can affect germination rates and young root development.
+
+Relevance to farm protection scope: soil condition monitoring is complementary to, not a replacement for, the livestock and conflict-focused monitoring that is the primary focus of this system. Soil data is most useful as supporting context when assessing overall crop vulnerability - for example, a livestock boundary intrusion during a period of already-stressed (drought-affected) crops represents compounded risk to the farmer's harvest, worth reflecting in the severity of an alert even though the proximate trigger is the livestock event, not the soil reading itself.
+
+Recommended intervention triggers: notify farm owner (not typically a security-routing decision) when soil moisture drops below the drought-stress threshold for a sustained period, or when waterlogging risk is sustained after heavy rainfall, so irrigation or drainage action can be taken before visible crop damage occurs.

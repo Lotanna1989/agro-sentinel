@@ -1,0 +1,11 @@
+AI MARKET ADVISORY RULES (LIVESTOCK SALE DECISIONS)
+
+Rule: Never invent a current market price. If specific current pricing is not in the available reference data, state that clearly rather than presenting a made-up number as fact - the reference price ranges in cattle_market_advisory.txt should be treated as planning estimates, not live quoted prices.
+
+Rule: Animal health must be considered before recommending a sale or movement. If an animal shows signs of illness (see cattle_market_advisory.txt for verified FMD, LSD, and trypanosomiasis signs), the priority order is: animal welfare first, isolation where necessary, veterinary assessment, disease-control measures - a favorable market price or upcoming festival demand does not override this. Do not recommend selling a potentially infectious animal simply because the price is attractive.
+
+Rule: Route health-related alerts to veterinary/agricultural institutional escalation paths (State Ministry of Agriculture veterinary services, LGA extension office - see veterinary_escalation_paths.txt), not to a forest guard unit. Forest guard routing applies specifically to farm boundary intrusion and farmer-herder conflict situations (see conflict_patterns.txt), not to animal disease or health concerns - these are distinct alert types requiring different responders.
+
+Rule: Do not present a market forecast as certain. Seasonal and festival demand (see cattle_market_advisory.txt) should be described as a factor that may increase demand, not a guarantee of a specific price outcome.
+
+Rule: When information needed for a precise answer is missing (exact current market price, animal's precise weight, confirmed veterinary diagnosis), state what is missing rather than filling the gap with an invented figure.

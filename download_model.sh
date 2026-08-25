@@ -1,38 +1,29 @@
-#!/usr/bin/env bash
-# Download your model weight file.
-#
-# Rules:
-#   - Must be idempotent (safe to run multiple times).
-#   - Must download without any credentials (public URL only).
-#   - The output path must match `_runtime.model_path` in metadata.json.
+##!/bin/bash
+# ADTC 2026 Submission - Model Download Script
+# Downloads the Qwen2.5-3B-Instruct GGUF (Q4_K_M quantization) into model/
+# Idempotent: safe to run multiple times, skips download if file already exists.
 
-set -euo pipefail
+set -e  # exit immediately if any command fails
 
-HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-MODEL_DIR="$HERE/model"
-MODEL_FILE="$MODEL_DIR/SmolLM2-135M-Instruct-Q4_K_M.gguf"
-
-# ── Replace this URL with your public model weight URL ─────────────────────────
-MODEL_URL="https://huggingface.co/bartowski/SmolLM2-135M-Instruct-GGUF/resolve/main/SmolLM2-135M-Instruct-Q4_K_M.gguf"
-# ───────────────────────────────────────────────────────────────────────────────
+MODEL_DIR="model"
+MODEL_FILE="$MODEL_DIR/qwen2.5-3b-instruct-q4_k_m.gguf"
+MODEL_URL="https://huggingface.co/Qwen/Qwen2.5-3B-Instruct-GGUF/resolve/main/qwen2.5-3b-instruct-q4_k_m.gguf"
 
 mkdir -p "$MODEL_DIR"
 
-if [[ -f "$MODEL_FILE" ]]; then
-  echo "model already present at $MODEL_FILE — skipping download"
-  exit 0
-fi
-
-echo "downloading $MODEL_URL → $MODEL_FILE (~80 MB)…"
-
-if command -v curl > /dev/null 2>&1; then
-  curl -L --fail --progress-bar -o "$MODEL_FILE.partial" "$MODEL_URL"
-elif command -v wget > /dev/null 2>&1; then
-  wget --show-progress -O "$MODEL_FILE.partial" "$MODEL_URL"
+if [ -f "$MODEL_FILE" ]; then
+    echo "Model already downloaded at $MODEL_FILE - skipping."
 else
-  echo "error: neither curl nor wget found" >&2
-  exit 1
+    echo "Downloading Qwen2.5-3B-Instruct (Q4_K_M) to $MODEL_FILE ..."
+    curl -L --retry 5 --retry-delay 5 -o "$MODEL_FILE" "$MODEL_URL"
+    echo "Download complete."
 fi
 
-mv "$MODEL_FILE.partial" "$MODEL_FILE"
-echo "done: $MODEL_FILE"
+# Basic sanity check: confirm the file is non-trivial in size (not an error page)
+FILE_SIZE=$(stat -c%s "$MODEL_FILE" 2>/dev/null || stat -f%z "$MODEL_FILE" 2>/dev/null)
+if [ "$FILE_SIZE" -lt 1000000 ]; then
+    echo "ERROR: Downloaded file is suspiciously small ($FILE_SIZE bytes). Download may have failed."
+    exit 1
+fi
+
+echo "Model ready at $MODEL_FILE ($FILE_SIZE bytes)."

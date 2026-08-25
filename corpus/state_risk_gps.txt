@@ -1,0 +1,39 @@
+NIGERIA STATE-LEVEL FARMER-HERDER CONFLICT RISK TIERS AND GPS REFERENCE
+
+This document provides approximate GPS coordinates (state capital, for general geolocation reference) and a risk tier classification for all 36 Nigerian states plus the Federal Capital Territory. Risk tiers are based on documented conflict research concentration, not precise incident counts, since exhaustive state-by-state incident data is not consistently available. Lower tier does not mean zero risk — it reflects less concentrated documentation in available research.
+
+TIER 1 - HIGH DOCUMENTED RISK (part of the 7 states research identifies as accounting for the large majority of recorded farmer-herder conflict incidents and deaths nationally):
+- Benue State (capital Makurdi, approx 7.73N, 8.52E) - North Central. Highest-casualty state in most tracking data. Documented primary causes: water source contamination by cattle, crop destruction, grazing on disputed fallow land.
+- Plateau State (capital Jos, approx 9.92N, 8.90E) - North Central. History of severe mass-casualty incidents; research shows local governance/mediation quality strongly affects escalation outcomes here.
+- Nasarawa State (capital Lafia, approx 8.49N, 8.52E) - North Central. Frequent spillover from Benue State conflict; documented large-scale displacement events.
+- Kaduna State (capital Kaduna, approx 10.52N, 7.44E) - North West. Conflict intensity has fluctuated significantly over time (elevated 2012-13, reduced 2013-19, re-emerged 2020 onward); Southern Kaduna particularly affected.
+- Taraba State (capital Jalingo, approx 8.89N, 11.36E) - North East. Site of some of the most severe recorded single incidents (Mambilla Plateau area).
+- Adamawa State (capital Yola, approx 9.20N, 12.48E) - North East.
+- Kogi State (capital Lokoja, approx 7.80N, 6.74E) - North Central.
+
+TIER 2 - DOCUMENTED MODERATE/EMERGING RISK (confirmed recurring incidents in recent research and news reporting, though less concentrated in long-run academic tracking than Tier 1):
+- Enugu State (capital Enugu, approx 6.44N, 7.50E) - South East. Documented recurring incidents, notably concentrated around harvest season (reported pattern: attacks occur "every year during harvest" in affected communities per 2025 reporting).
+- Ebonyi State (capital Abakaliki, approx 6.32N, 8.11E) - South East.
+- Ondo State (capital Akure, approx 7.25N, 5.20E) - South West.
+- Oyo State (capital Ibadan, approx 7.38N, 3.90E) - South West, including the Ibarapa area which has recorded multiple documented incidents.
+- Niger State (capital Minna, approx 9.61N, 6.56E) - North Central.
+- Zamfara State (capital Gusau, approx 12.17N, 6.66E) - North West. Conflict here is also heavily intertwined with the broader Nigerian bandit conflict.
+- Katsina State (capital Katsina, approx 12.99N, 7.60E) - North West.
+
+TIER 3 - LOWER DOCUMENTED INCIDENCE (limited concentrated documentation in available research; general regional baseline risk applies; monitoring is still recommended, particularly during peak seasonal migration windows):
+- Abuja / FCT (approx 9.08N, 7.40E) - Central, bordered by Tier 1/2 states.
+- Sokoto (13.06N, 5.24E), Kebbi (12.45N, 4.20E), Jigawa (12.23N, 9.56E), Kano (12.00N, 8.52E), Bauchi (10.31N, 9.85E), Gombe (10.29N, 11.17E), Borno (11.85N, 13.16E), Yobe (11.75N, 11.97E) - North West / North East. Some overlap with broader insurgency-related instability; herder migration routes pass through these states seasonally.
+- Kwara (8.50N, 4.55E), Federal-adjacent North Central fringe states.
+- Anambra (6.21N, 7.07E), Imo (5.49N, 7.03E), Abia (5.53N, 7.49E) - South East, lower documented incidence than Enugu/Ebonyi but geographically proximate.
+- Delta (5.89N, 5.68E), Edo (6.34N, 5.62E), Rivers (4.84N, 6.99E), Bayelsa (4.92N, 6.26E), Cross River (5.97N, 8.32E), Akwa Ibom (5.02N, 7.92E) - South South. Lowest documented farmer-herder incidence nationally; other land-use conflicts (oil, fishing rights) are more commonly reported in this zone.
+- Lagos (6.52N, 3.38E), Ogun (7.16N, 3.35E), Osun (7.77N, 4.56E), Ekiti (7.72N, 5.31E) - South West. Ekiti has passed anti-open-grazing legislation specifically in response to documented incidents.
+
+SEASONAL RISK PATTERN (applies as a modifier across all states/tiers, based on climate-migration research):
+- Dry season (approximately November-March): herders migrate further south and toward river valleys/water sources in search of pasture and water as northern grazing land dries out. Contact risk with settled farming communities increases as migration routes cross into or near farmland.
+- Onset of rains / planting season (approximately April-June): newly planted, vulnerable young crops increase the economic stakes of any livestock incursion, raising the severity of conflict when incidents occur even if frequency is not yet peak.
+- Growing season (approximately July-September): crops are established; incursions cause substantial and visible damage, a well-documented trigger point for confrontation.
+- Harvest season (approximately September-November): documented as a specifically elevated-risk window in multiple affected communities (Enugu State reporting specifically identifies harvest season as a recurring annual attack pattern), likely because harvested/stored crops and cleared fields intersect with herd movement as herders begin returning toward drier grazing areas or repositioning for the dry season ahead.
+
+How to use this for risk scoring: combine the state's tier (baseline risk level) with the current seasonal window (modifier) to produce a combined risk estimate — e.g., a Tier 1 state during harvest season represents peak combined risk; a Tier 3 state during the dry-season off-migration window represents baseline lower risk. This is a reasoned combination of two independently documented factors, not a precise statistical prediction.
+
+Sources referenced: ACCORD conflict pattern analysis (7-state concentration data); state-specific academic and news research cited in the conflict_patterns.txt document in this corpus; Punch Nigeria reporting on Enugu State harvest-season attack patterns (2025); general climate-migration conflict research on Sahel-to-Middle-Belt herd movement patterns. GPS coordinates are approximate state capital locations for general reference only, not precise incident locations.

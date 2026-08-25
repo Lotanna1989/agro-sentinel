@@ -1,0 +1,20 @@
+LIVESTOCK HEAT STRESS AND TEMPERATURE-HUMIDITY INDEX (THI) THRESHOLDS
+
+The Temperature-Humidity Index (THI) combines air temperature and relative humidity into a single value used worldwide to assess heat stress risk in dairy and beef cattle. It is the standard tool used by agricultural extension services, including the USDA Southeast Regional Climate Hub, to issue livestock heat stress alerts.
+
+THI risk categories for cattle, based on published livestock heat stress research:
+- THI below 68: comfort zone, no heat stress risk.
+- THI 68-72: mild discomfort / stress threshold. Respiration rate may begin to rise.
+- THI 72-79: moderate stress (alert level). Increased respiration rate, reduced feed intake, and measurable drops in milk production begin to appear. Some studies show milk yield drops by roughly 0.2 kg per unit of THI increase above 72.
+- THI 79-84: danger level. Significant reduction in feed intake and milk yield, elevated respiration rate above 60 breaths per minute, rectal temperature may exceed 38.5°C (101.3°F), and reproductive performance is measurably affected.
+- THI above 84: emergency level. High risk of severe production loss and, in vulnerable animals (calves, late-pregnancy cows, high-yield dairy cows), risk of mortality without active cooling intervention.
+
+As a rough temperature-only reference (useful when humidity data is unavailable): heat stress in cattle typically begins to appear around 25-27°C in humid conditions, with moderate stress by 30-32°C and severe stress above 35°C sustained for extended periods, particularly for high-producing dairy cows and young or pregnant animals.
+
+Poultry (broilers and layers) are also commonly assessed using THI or temperature-based thresholds. Sustained temperatures above 30-32°C with poor ventilation significantly increase mortality risk in poultry. Signs of heat stress in poultry include panting, wing-spreading, and reduced feed consumption.
+
+Goats and sheep generally tolerate heat better than cattle but still show measurable distress above 35°C, particularly in high humidity. Shade and water access are critical mitigation factors.
+
+Recommended interventions for heat stress across livestock types: increase ventilation and air movement (fans, tube ventilation), provide shade structures, ensure constant access to cool clean drinking water, avoid handling or transport during peak heat hours (typically 11am-4pm), and use misting or sprinkler systems where feasible.
+
+Sources referenced: USDA Southeast Regional Climate Hub Cattle Heat Stress Alert factsheet; peer-reviewed THI threshold research (Journal of Dairy Science Communications, 2025; Madridge Journal of Biotechnology); Galebreaker technical guidance on housed dairy cattle heat stress.
