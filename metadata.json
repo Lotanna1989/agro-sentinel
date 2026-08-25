@@ -1,37 +1,37 @@
 {
-  "team_id": "your-team-id",
-  "domain": "coding_assistants",
+  "team_id": "agro-sentinel",
+  "domain": "agriculture",
   "language_scope": ["en"],
-  "african_alpha_claim": false,
+  "african_alpha_claim": true,
   "budget_laptop_claim": true,
   "submitter": {
-    "name": "your-name",
-    "email": "your-email@domain.com",
-    "github_handle": "your-github"
+    "name": "Lotanna Nnamani",
+    "email": "nnamanilota@gmail.com",
+    "github_handle": "https://github.com/Lotanna1989"
   },
   "cross_disciplinary_pairing": {
-    "discipline": "education",
+    "discipline": "RAG_fusion",
     "load_bearing": true,
-    "description": "Brief description of how your model serves a real-world domain."
+    "description": "Local RAG over a Nigerian livestock and crop advisory corpus, agrobased cobflict pattern and Nigerian market data especially for some parts of Northern NIGERIA, grounds the model's farm-protection and livestock health/market advisory reasoning."
   },
   "test_prompts": [
     {
       "prompt_id": "tp_001",
-      "prompt": "Write a Python function that reads a CSV file and returns the column with the highest mean value."
+      "prompt": "I am a farmer in Makurdi and cattle herders intruded, what immediate steps can I take to prevent a repeat and who can I contact if the situation becomes unsafe?"
     },
     {
       "prompt_id": "tp_002",
-      "prompt": "Explain the difference between a list and a tuple in Python, and give one example where each is the better choice."
+      "prompt": "I have a ram in Kano weighing about 40kg, and Sallah is coming soon. It has a fever and some sores around its mouth. Should I still sell it for Sallah, and what would it likely be worth?"
     }
   ],
   "model": {
-    "name": "SmolLM2-135M-Instruct-Q4_K_M",
+    "name": "Qwen2.5-3B-Instruct-Q4_K_M",
     "runtime": "llama.cpp",
     "quantization": "GGUF Q4_K_M",
-    "parameters_estimate": "135M",
+    "parameters_estimate": "3B",
     "packaging": "binary_bundle"
   },
   "_runtime": {
-    "model_path": "model/SmolLM2-135M-Instruct-Q4_K_M.gguf"
+    "model_path": "model/qwen2.5-3b-instruct-q4_k_m.gguf"
   }
 }
