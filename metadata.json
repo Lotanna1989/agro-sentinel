@@ -2,7 +2,7 @@
   "team_id": "agro-sentinel",
   "domain": "agriculture",
   "language_scope": ["en"],
-  "african_alpha_claim": true,
+  "african_alpha_claim": false,
   "budget_laptop_claim": true,
   "submitter": {
     "name": "Lotanna Nnamani",
