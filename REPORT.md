@@ -1,4 +1,4 @@
-# Technical Report — [Your Submission Title]
+# Technical Report — [AGRO-SENTINEL BY AGRORITHM]
 
 **Team ID:** agro-sentinel 
 **Domain:** Agriculture   
