@@ -92,6 +92,8 @@ The architecture was revised to separate two concerns that had been incorrectly 
 
 - **Target hardware**: ADTC Standard Laptop (Intel i5 10th–12th gen, 8 GB RAM, 1TB HDD, windows, integrated graphics, low budget laptop)
 
+- **VERY IMPORTANT SETUP FOR AGRO-SENTINEL**: After running the Qwen base model, NEXT you run python setup_offline_model.py once (requires internet) to cache the embedding model locally. All subsequent runs of build_index.py and rag_pipeline.py operate fully offline, then after you run rag_pipeline you can now chat infer the model for agro based responses.
+
 **Benchmark results (measured via official ADTC profiler, participant mode, full run including accuracy):**
 
 | Metric | Result |
