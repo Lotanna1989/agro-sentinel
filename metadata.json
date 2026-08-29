@@ -10,10 +10,10 @@
     "github_handle": "https://github.com/Lotanna1989"
   },
   "cross_disciplinary_pairing": {
-    "discipline": "RAG_fusion",
-    "load_bearing": true,
-    "description": "Local RAG over a Nigerian livestock and crop advisory corpus, agrobased cobflict pattern and Nigerian market data especially for some parts of Northern NIGERIA, grounds the model's farm-protection and livestock health/market advisory reasoning."
-  },
+    "discipline": "RAG_fusion","sensor",
+    "load_bearing": "true",
+  "description": "Local RAG pipeline (all-MiniLM-L6-v2 sentence embeddings over ChromaDB) grounded in a Nigerian livestock and crop advisory corpus, fused with simulated IoT sensor readings (DHT22 temperature/humidity, CV Iot) modeling on-site livestock pen conditions. This grounding, spanning farmer-herder conflict patterns across Tier 1 Northern Nigerian states (e.g. Benue, Kano) and regional livestock market dynamics tied to seasonal demand events like Sallah, drives the model's farm-protection safety guidance and livestock health/market advisory reasoning, replacing generic agricultural advice with context-specific, sensor-aware responses suited to low-connectivity Nigerian farming communities."
+}
   "test_prompts": [
     {
       "prompt_id": "tp_001",
