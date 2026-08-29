@@ -4,6 +4,9 @@ Quick way to confirm the vector index retrieves relevant context
 before wiring it into the full LLM pipeline.
 """
 
+import os
+os.environ["HF_HUB_OFFLINE"] = "1"
+os.environ["TRANSFORMERS_OFFLINE"] = "1"
 import chromadb
 from sentence_transformers import SentenceTransformer
 
