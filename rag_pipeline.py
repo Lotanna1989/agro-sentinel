@@ -7,7 +7,9 @@ grounded, farm-protection-focused answer.
 Requires llama-server.exe running first:
     .\\llama-server.exe -hf Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M --port 8080
 """
-
+import os
+os.environ["HF_HUB_OFFLINE"] = "1"
+os.environ["TRANSFORMERS_OFFLINE"] = "1"
 import chromadb
 import json
 import requests
