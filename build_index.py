@@ -5,6 +5,8 @@ Runs fully offline once the embedding model is downloaded the first time.
 """
 
 import os
+os.environ["HF_HUB_OFFLINE'] = "1"
+os.environ["TRANSFORMERS_OFFLINE"] = "1"
 import chromadb
 from sentence_transformers import SentenceTransformer
 
