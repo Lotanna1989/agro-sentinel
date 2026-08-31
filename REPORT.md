@@ -176,21 +176,20 @@ Two scenarios were chosen deliberately to demonstrate that one underlying system
                 │
         ┌───────┴────────┐
         ▼                ▼
- Download Qwen     Run setup_offline_model.py
+ Download Qwen     Run setup_offline_model.py to cache it
         │                │
         ▼                ▼
- Store & run Qwen  Cache Embedding Model
+ Store Qwen locally  Cache Embedding Model(setup_offline_model) locally
         │                │
         └───────┬────────┘
                 ▼
         🔌 Internet No Longer Needed
                 │
                 ▼
-        Run build_index.py
+         Run the Qwen Model locally
                 │
                 ▼
-      Build Local ChromaDB
-       Knowledge Index
+        Run build_index.py
                 │
                 ▼
        Run rag_pipeline.py
