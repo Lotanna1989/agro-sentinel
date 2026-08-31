@@ -165,7 +165,14 @@ Two scenarios were chosen deliberately to demonstrate that one underlying system
 ## 9. HOW TO SETUP, STARTUP AND RUN THE AGRO-SENTINEL OFFLINE EXECUTION FLOWCHART**: 
 1. First you will download qwen by running download_model.sh and also download the embedding model by running setup_offline_model.py so it can cache locally. 
 2. Now OFFLINE, Next go to powershell and point to the local qwen file location on your laptop and then run qwen using this command .llama-server.exe -hf Qwen/Qwen2.5B-3B-Instruct-GGUF:Q4_K_M --port 8080.
-3. Then from here you can run build_index.py and finally rag_pipeline.py all OFFLINE and LOCALLY. All inference henceforth is LOCAL
+3. Then from here you can run build_index.py and finally rag_pipeline.py all OFFLINE and LOCALLY. All inference is LOCAL.
+
+
+
+
+
+
+
 
                  START
                 │
