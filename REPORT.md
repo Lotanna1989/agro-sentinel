@@ -168,28 +168,56 @@ Two scenarios were chosen deliberately to demonstrate that one underlying system
 3. Then from here you can run build_index.py and finally rag_pipeline.py all OFFLINE and LOCALLY. All inference is LOCAL.
 
 
+```
+             START
+                │
+                ▼
+      🌐 Internet Connection
+                │
+        ┌───────┴────────┐
+        ▼                ▼
+ Download Qwen     Run setup_offline_model.py
+        │                │
+        ▼                ▼
+ Store Qwen Locally   Cache Embedding Model
+        │                │
+        └───────┬────────┘
+                ▼
+        🔌 Internet No Longer Needed
+                │
+                ▼
+        Run build_index.py
+                │
+                ▼
+      Build Local ChromaDB
+       Knowledge Index
+                │
+                ▼
+       Run rag_pipeline.py
+                │
+                ▼
+          👤 User Query
+                │
+                ▼
+       Cached Embedding Model
+                │
+                ▼
+       Search Local ChromaDB
+                │
+                ▼
+      Retrieve Relevant Context
+                │
+                ▼
+        Local Qwen2.5 Model
+         (llama-server)
+                │
+                ▼
+        🤖 Generate Response
+                │
+                ▼
+          👤 User Response
+                │
+                ▼
+          100% OFFLINE
 
-      flowchart TD
-    A([START]) --> B[Internet Connection]
-
-    B --> C[Download Qwen2.5]
-    B --> D[Run setup_offline_model.py]
-
-    C --> E[Store Qwen Locally]
-    D --> F[Cache Embedding Model]
-
-    E --> G[Internet No Longer Needed]
-    F --> G
-
-    G --> H[Run build_index.py]
-    H --> I[Build Local ChromaDB Knowledge Index]
-
-    I --> J[Run rag_pipeline.py]
-    J --> K[User Query]
-    K --> L[Cached Embedding Model]
-    L --> M[Search Local ChromaDB]
-    M --> N[Retrieve Relevant Context]
-    N --> O[Local Qwen2.5 via llama-server]
-    O --> P[Generate Response]
-    P --> Q([User Receives Response])
-
+```
