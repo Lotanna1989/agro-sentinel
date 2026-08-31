@@ -161,3 +161,60 @@ This mirrors the architecture used for the Prompt 1 (conflict/geofence) pillar: 
 2. **Livestock Market advisory and health advisory**: 
 
 Two scenarios were chosen deliberately to demonstrate that one underlying system — one model, one reasoning pipeline — protects both crops/security and livestock/environmental wellbeing, without requiring three separate purpose-built tools. 
+
+## 9. HOW TO SETUP, STARTUP AND RUN THE AGRO-SENTINEL OFFLINE EXECUTION FLOWCHART**: 
+1. First you will download qwen by running download_model.sh and also download the embedding model by running setup_offline_model.py so it can cache locally. 
+2. Now OFFLINE, Next go to powershell and point to the local qwen file location on your laptop and then run qwen using this command .llama-server.exe -hf Qwen/Qwen2.5B-3B-Instruct-GGUF:Q4_K_M --port 8080.
+3. Then from here you can run build_index.py and finally rag_pipeline.py all OFFLINE and LOCALLY. All inference henceforth is LOCAL
+
+                 START
+                │
+                ▼
+      🌐 Internet Connection
+                │
+        ┌───────┴────────┐
+        ▼                ▼
+ Download Qwen     Run setup_offline_model.py
+        │                │
+        ▼                
+Store & run Qwen    Cache Embedding Model
+        │                │
+        └───────┬────────┘
+                ▼
+        🔌 Internet No Longer Needed
+                │
+                ▼
+        Run build_index.py
+                │
+                ▼
+      Build Local ChromaDB
+       Knowledge Index
+                │
+                ▼
+       Run rag_pipeline.py
+                │
+                ▼
+          👤 User Query
+                │
+                ▼
+       Cached Embedding Model
+                │
+                ▼
+       Search Local ChromaDB
+                │
+                ▼
+      Retrieve Relevant Context
+                │
+                ▼
+        Local Qwen2.5 Model
+         (llama-server)
+                │
+                ▼
+        🤖 Generate Response
+                │
+                ▼
+          👤 User Response
+                │
+                ▼
+          100% OFFLINE
+
