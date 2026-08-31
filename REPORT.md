@@ -179,7 +179,7 @@ Two scenarios were chosen deliberately to demonstrate that one underlying system
  Download Qwen     Run setup_offline_model.py
         │                │
         ▼                ▼
- Store Qwen Locally   Cache Embedding Model
+ Store & run Qwen  Cache Embedding Model
         │                │
         └───────┬────────┘
                 ▼
