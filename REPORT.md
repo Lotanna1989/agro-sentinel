@@ -169,12 +169,7 @@ Two scenarios were chosen deliberately to demonstrate that one underlying system
 
 
 
-
-
-
-
-
-                 START
+              START
                 │
                 ▼
       🌐 Internet Connection
@@ -183,8 +178,8 @@ Two scenarios were chosen deliberately to demonstrate that one underlying system
         ▼                ▼
  Download Qwen     Run setup_offline_model.py
         │                │
-        ▼                
-Store & run Qwen    Cache Embedding Model
+        ▼                ▼
+ Store Qwen Locally   Cache Embedding Model
         │                │
         └───────┬────────┘
                 ▼
@@ -224,4 +219,3 @@ Store & run Qwen    Cache Embedding Model
                 │
                 ▼
           100% OFFLINE
-
